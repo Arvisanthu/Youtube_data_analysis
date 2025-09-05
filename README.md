@@ -1,34 +1,84 @@
-YouTube - Text Data Analysis:
 
-YouTube is the 2nd most visited site in the world with more than 1 billion hours of the content is watched per day, attracts about 44% of all internet users also 37% of all mobile internet traffic belongs to YouTube.
+### **1. Project Objectives**
 
-Project process:
+* Analyze YouTube text data (comments, feedback, and metadata) to understand user engagement and sentiment.
+* Perform **sentiment analysis**, **text mining**, and **exploratory data analysis (EDA)** to identify patterns in user behavior.
+* Use data visualization techniques to uncover insights about audience preferences, likes, and trending content.
 
-1) Understand the Use-Case data.
+---
 
-2) Run ETL pipeline
-   
-   a)Extract: To read the raw data.
-   
-   b)Transform: Remove Duplicate rows, Remove irrelavent rows, Fix errors, Check Missing values & data types etc., Deal with Outliers.
+### **2. Methods**
 
-   c)Load: To load the featurized/formatted data.
+* **ETL Pipeline**:
 
-3) EDA: Exploratory Data Analysis, to perform data analysis and visualize the data.
+  * **Extract** → Read raw YouTube data.
+  * **Transform** → Clean data (remove duplicates, irrelevant rows, handle missing values, outliers, fix errors).
+  * **Load** → Store and use the formatted/featurized dataset for analysis.
 
+* **Exploratory Data Analysis (EDA)**:
 
-5 key modules/packages used for the Data Analysis project process:
+  * Analyzed sentiment polarity (positive, negative).
+  * WordCloud for frequent words.
+  * Emoji usage analysis.
+  * Visualization with boxplots, scatterplots, heatmaps, regression plots, and interactive Plotly charts.
 
-1) Pandas: To read, modify & maniplate the data.
+* **Libraries Used**:
 
-2) NumPy: To perform numerical computations of the data like Mean, Median, Varience & Percentile of the data.
+  * **Pandas** (data manipulation)
+  * **NumPy** (statistical computation: mean, median, variance, percentiles)
+  * **Matplotlib & Seaborn** (basic + advanced static visualization)
+  * **Plotly** (dynamic interactive visualizations)
 
-3) Matplotlib: Data visualization, to generate basic plots.
+---
 
-4) Seaborn: Used for beautiful looking plots with fast & quick Data visualization.
+### **3. Dataset**
 
-5) Plotly: Used for dynamic plots data visualization.
+* Source: YouTube text/comment dataset (with metadata such as likes, views, categories, and trending video details).
+* Features included: Comments/feedback, likes, views, category, channel, sentiment polarity, and emoji usage.
 
+---
+
+### **4. Results**
+
+* **Sentiment Analysis**:
+
+  * Positive users emphasized words like *best, awesome, perfect, amazing, look, happy*.
+  * Negative users emphasized words like *terrible, worst, horrible, boring, disgusting*.
+
+* **WordCloud**: Highlighted the most frequent positive and negative keywords.
+
+* **Emoji Analysis**:
+
+  * Majority used positive emojis (funny, love, heart, outstanding).
+  * Indicated strong positive user engagement.
+
+* **Boxplot Analysis**:
+
+  * Categories with max likes: *Music, Entertainment, People & Blogs, Nonprofit & Activism*.
+
+* **Scatter/Regression (Likes vs Views)**:
+
+  * Linear trend → More views lead to more likes.
+
+* **Heatmap**:
+
+  * Strong correlation between views and likes (0.78).
+
+* **Plotly Visualization**:
+
+  * *Stephen Colbert channel* had the largest number of trending videos.
+
+---
+
+### **5. Insights**
+
+* **YouTube audience sentiment is mostly positive**, with heavy use of positive keywords and emojis.
+* **Content categories** like Music and Entertainment dominate user engagement (likes & views).
+* **Views and Likes strongly correlate**, meaning popularity and engagement grow together.
+* **Channels with consistent trending videos (e.g., Stephen Colbert)** can serve as benchmarks for content strategy.
+* **Text and emoji sentiment** provide valuable signals about customer satisfaction and engagement levels.
+
+---
 
 
 Data Visualizations:
